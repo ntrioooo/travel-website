@@ -1,0 +1,99 @@
+body {
+    background-color: #E3E6eb;
+    font-family: 'Assistant', sans-serif;
+    color: #071C4D;
+}
+
+// Navbar
+.navbar-brand {
+    img {
+        max-height: 40px;
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: #071C4D;
+
+            &.active {
+                font-weight: bold;
+                color: #071C4D !important;
+            }
+        }
+    }
+}
+
+.btn-navbar-right {
+    margin-top: -10px !important;
+    margin-bottom: -8px !important;
+    margin-right: -18px !important;
+
+    height: 70px;
+    border-radius: 0;
+}
+
+.btn-login {
+    background-color: #071C4D;
+    color: #fff;
+
+    &:hover {
+        background-color: #1E3771;
+        color: #fff;
+    }
+}
+
+// Header
+
+header {
+    padding: 180px 0px 165px;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    margin-top: -70px;
+
+    h1, p {
+        color: #fff;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .btn-get-started {
+        background-color: #FF9E53;
+        color: #fff;
+
+        &:hover {
+            background-color: #f7ae76;
+            color: #fff;
+        }
+    }
+}
+
+// STATISTIK
+
+.section-stats {
+    margin-top: -50px;
+
+    .stats-detail {
+        padding-top: 15px;
+        background-color: #fff;
+        padding-left: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
