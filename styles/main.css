@@ -264,7 +264,7 @@ header .btn-get-started:hover {
 }
 
 .section-details-content .card-details {
-  padding: 30px;
+  padding: 20px;
   border-radius: 11px;
 }
 
@@ -282,28 +282,71 @@ header .btn-get-started:hover {
   color: #b1b1b1;
 }
 
+.section-details-content .card-right {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+}
+
 .section-details-content .features {
   margin-top: 20px;
 }
 
-.section-details-content h3 {
+.section-details-content .features h3 {
   font-size: 18px;
   color: #071C4D;
   margin-bottom: 0;
 }
 
-.section-details-content p {
+.section-details-content .features p {
   margin-bottom: 0;
 }
 
-.section-details-content .description {
+.section-details-content .features .description {
   margin-left: 10px;
   overflow: hidden;
   float: left;
 }
 
-.section-details-content .features-image {
+.section-details-content .features .features-image {
   width: 45px;
   height: 45px;
   float: left;
+}
+
+.section-details-content .gallery .xzoom-container {
+  display: block;
+}
+
+.section-details-content .gallery .xzoom-container .xzoom {
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.section-details-content .gallery .xzoom-container .xactive {
+  border: 4px solid #1a4c9c;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section-details-content .member .member-image {
+  width: 40px;
+  height: 40px;
+}
+
+.section-details-content .join-container {
+  margin-top: -16px;
+}
+
+.section-details-content .btn-join-now {
+  background-color: #FF9e53;
+  color: #fff;
+  border-radius: 0;
+}
+
+.section-details-content .btn-join-now:hover {
+  background-color: #f1b07e;
+  color: #FFFFFF;
 }
