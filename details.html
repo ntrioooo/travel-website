@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="xZoom/xzoom.css">
     <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <link rel="stylesheet" href="styles/main.css">
@@ -68,7 +69,7 @@
      <section class="section-details-content">
        <div class="container">
          <div class="row">
-           <div class="col p-3">
+           <div class="col pl-0">
              <nav>
                <ol class="breadcrumb">
                  <li class="breadcrumb-item">
@@ -82,14 +83,33 @@
            </div>
          </div>
          <div class="row">
-           <div class="col-lg-8 pl-lg-3">
+           <div class="col-lg-8 pl-lg-0">
              <div class="card card-details">
                <h1>Nusa Peninda</h1>
                <p>
                  Republic of Indonesia Raya
                </p>
                <div class="gallery">
-
+                <div class="xzoom-container">
+                  <img src="./images/details-1.jpg" class="xzoom" id="xzoom-default" xoriginal="./images/details-1.jpg">
+                </div>
+                <div class="xzoom-thumbs">
+                  <a href="images/details-1.jpg">
+                    <img src="images/details-1.jpg" class="xzoom-gallery" width="133" xpreview="images/details-1.jpg">
+                  </a>
+                  <a href="images/details-2.jpg">
+                    <img src="images/details-2.jpg" class="xzoom-gallery" width="133" xpreview="images/details-2.jpg">
+                  </a>
+                  <a href="images/details-3.jpg">
+                    <img src="images/details-3.jpg" class="xzoom-gallery" width="133" xpreview="images/details-3.jpg">
+                  </a>
+                  <a href="images/details-4.jpg">
+                    <img src="images/details-4.jpg" class="xzoom-gallery" width="133" xpreview="images/details-4.jpg">
+                  </a>
+                  <a href="images/details-5.jpg">
+                    <img src="images/details-5.jpg" class="xzoom-gallery" width="133" xpreview="images/details-5.jpg">
+                  </a>
+                </div>
                </div>
                <h2>Tentang Wisata</h2>
                <p>
@@ -132,6 +152,45 @@
                  </div>
 
                </div>
+             </div>
+           </div>
+           <div class="col-lg-4">
+             <div class="card card-details card-right">
+               <h2>Members are going</h2>
+               <div class="members my-2">
+                <img src="images/member-1.png" alt="" class="member-image mr-1">
+                <img src="images/member-1.png" alt="" class="member-image mr-1">
+                <img src="images/member-1.png" alt="" class="member-image mr-1">
+                <img src="images/member-1.png" alt="" class="member-image mr-1">
+                <img src="images/member-2.png" alt="" class="member-image mr-1">
+
+                
+               </div>
+               <hr>
+               <h2>Trip Information</h2>
+               <table class="trip-information">
+                 <tr>
+                   <th width="50%">Date of Depature</th>
+                   <td width="50%" class="text-right">22 Aug, 2019</td>
+                 </tr>
+                 <tr>
+                  <th width="50%">Duration</th>
+                  <td width="50%" class="text-right">4D 3N</td>
+                </tr>
+                <tr>
+                  <th width="50%">Type</th>
+                  <td width="50%" class="text-right">Open Trip</td>
+                </tr>
+                <tr>
+                  <th width="50%">Price</th>
+                  <td width="50%" class="text-right">$50.00/person</td>
+                </tr>
+               </table>
+             </div>
+             <div class="join-container">
+               <a href="#" class="btn btn-block btn-join-now mt-3 py-2">
+                 Join Now
+               </a>
              </div>
            </div>
          </div>
@@ -194,10 +253,21 @@
       </div>
     </footer>
 
-
     <script src="jquery/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="retina/retina.min.js"></script>
+    <script src="xzoom/xzoom.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.xzoom, .xzoom-gallery').xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: '#333',
+          Xoffset: 15,
+        });
+      });
+    </script>
   </body>
 </html>
 
